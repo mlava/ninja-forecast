@@ -1,0 +1,3 @@
+[submodule "lib/forecast"]
+	path = lib/forecast
+	url = https://github.com/mateodelnorte/forecast.io.git
