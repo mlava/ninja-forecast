@@ -18,7 +18,7 @@ function driver(opts,app) {
   var self = this;
   this._app = app;
   this._opts = opts;
-
+this._devices = {};
 
   app.on('client::up',function(){
 
