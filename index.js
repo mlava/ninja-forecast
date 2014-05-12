@@ -3,6 +3,7 @@ var Device = require('./lib/device')
   , stream = require('stream')
   , configHandlers = require('./lib/config-handlers');
 
+
 util.inherits(driver,stream);
 
 var HELLO_WORLD_ANNOUNCEMENT = {
@@ -24,6 +25,7 @@ function driver(opts,app) {
     if (!opts.hasSentAnnouncement) {
       self.emit('announcement',HELLO_WORLD_ANNOUNCEMENT);
       opts.hasSentAnnouncement = true;
+	  opts.current = [];
       self.save();
     }
 	
@@ -32,7 +34,7 @@ function driver(opts,app) {
 	self._opts.urls.forEach(function(url,index) {
 		self.createCameraByUrl(url,index);
     });
-  });
+  }.bind(this));
 };
 
 driver.prototype.config = function(rpc,cb) {
