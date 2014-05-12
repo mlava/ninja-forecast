@@ -1,0 +1,26 @@
+{
+  "name": "ninja-forecast",
+  "version": "0.2.0",
+  "description": "Forecast.io driver for Ninja Blocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mlava/ninja-forecast"
+  },
+  "keywords": [
+    "ninjablock",
+    "forecast.io",
+    "weather",
+    "Ninja",
+    "Blocks"
+    ],
+  "author": "Mark Lavercombe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlava/ninja-forecast/issues"
+  },
+  "homepage": "https://github.com/mlava/ninja-forecast"
+}
