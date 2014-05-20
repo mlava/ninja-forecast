@@ -35,6 +35,7 @@ this._devices = {};
 		self.createCameraByUrl(url,index);
     });
   }.bind(this));
+  
 };
 
 driver.prototype.config = function(rpc,cb) {
@@ -57,10 +58,17 @@ driver.prototype.config = function(rpc,cb) {
 
 driver.prototype.createCameraByUrl = function(snapshot_url,index) {
 
+  var self = this;
   var opts = snapshot_url;
 
-  var Camera = new Device(opts,this._app.opts,this._app.id,this._app.token,index);
-  this.emit('register', Camera);
+  var Camera = new Device(opts,index);
+  //this.emit('register', Camera);
+
+  self._devices[opts] = Camera;
+
+  Object.keys(Camera.devices).forEach(function(opts) {
+  self.emit('register', Camera.devices[opts]);
+  });
 };
 
 module.exports = driver;
