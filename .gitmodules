@@ -1,3 +1,6 @@
 [submodule "lib/forecast"]
 	path = lib/forecast
 	url = https://github.com/mateodelnorte/forecast.io.git
+[submodule "lib/forecast.io"]
+	path = lib/forecast.io
+	url = https://github.com/mateodelnorte/forecast.io.git
