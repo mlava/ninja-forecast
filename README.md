@@ -3,6 +3,8 @@ ninja-forecast
 
 Ninja Blocks driver for forecast.io
 
-debug
-request
-lodash
+Prerequisites:
+
+npm install debug
+sudo npm install request
+npm install lodash
