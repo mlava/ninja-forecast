@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git://github.com/mlava/ninja-forecast"
   },
+   "dependencies": {
+    "forecast.io": "^0.0.8"
+  },
   "keywords": [
     "ninjablock",
     "forecast.io",
