@@ -25,9 +25,11 @@ sudo service ninjablock restart
 
 
 
-Note- Depending on the npm version on your device you might need to update npm with the following command:
-sudo npm install -g npm
-Thanks @stormshaker!
+  Note- Depending on the npm version on your device you might need to update npm with the following command:
+
+    sudo npm install -g npm
+    
+  Thanks @stormshaker!
 
 
 Configuration
