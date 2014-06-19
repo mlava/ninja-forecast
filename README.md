@@ -15,13 +15,10 @@ With thanks for the open nature of the Ninja Blocks platform and community.
 Installation
 ================
 
-cd /opt/ninja/drivers
-
-git clone https://github.com/mlava/ninja-forecast
-
-cd ninja-forecast && npm install
-
-sudo service ninjablock restart
+    cd /opt/ninja/drivers
+    git clone https://github.com/mlava/ninja-forecast
+    cd ninja-forecast && npm install
+    sudo service ninjablock restart
 
 
 
