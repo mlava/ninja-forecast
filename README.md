@@ -22,11 +22,11 @@ Installation
 
 
 
-  Note- Depending on the npm version on your device you might need to update npm with the following command:
+Note- Depending on the npm version on your device you might need to update npm with the following command:
 
     sudo npm install -g npm
     
-  Thanks @stormshaker!
+Thanks @stormshaker!
 
 
 Configuration
