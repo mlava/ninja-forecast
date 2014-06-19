@@ -3,8 +3,6 @@ ninja-forecast
 
 Ninja Blocks driver for forecast.io
 
-v0.2.0
-
 A driver for Ninja Blocks to obtain up-to-date weather forecast data from the amazing team at Forecast.io.
 
 Relies on the forecast.io wrapper created by mateodelnorte and available at https://github.com/mateodelnorte/forecast.io.git.
@@ -28,9 +26,7 @@ sudo service ninjablock restart
 
 
 Note- Depending on the npm version on your device you might need to update npm with the following command:
-
 sudo npm install -g npm
-
 Thanks @stormshaker!
 
 
