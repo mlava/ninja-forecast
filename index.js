@@ -61,13 +61,16 @@ driver.prototype.createCameraByUrl = function(snapshot_url,index) {
   var self = this;
   var opts = snapshot_url;
 
-  var Camera = new Device(opts,index);
-  //this.emit('register', Camera);
+  var device;
+  if (self._devices.hasOwnProperty(opts)) {
+    device = self._devices[opts];
+  } else {
+    device = new Device(opts,index);
+    self._devices[opts] = device;
+  }
 
-  self._devices[opts] = Camera;
-
-  Object.keys(Camera.devices).forEach(function(opts) {
-  self.emit('register', Camera.devices[opts]);
+  Object.keys(device.devices).forEach(function(opts) {
+    self.emit('register', device.devices[opts]);
   });
 };
 
