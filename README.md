@@ -60,6 +60,9 @@ It isn't possible for me to create a widget for original NB dashboard that conta
 Changelog
 ================
 
+v0.2.1
+Update to ensure driver stops polling forecast.io API if cloud connection is lost.
+
 v0.2.0
 First public version
 
