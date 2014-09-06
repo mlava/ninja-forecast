@@ -3,6 +3,7 @@ var Device = require('./lib/device')
   , stream = require('stream')
   , configHandlers = require('./lib/config-handlers');
 
+var upTimer;
 
 util.inherits(driver,stream);
 
@@ -20,6 +21,10 @@ function driver(opts,app) {
   this._opts = opts;
 this._devices = {};
 
+	app.on('client::down',function(){ 
+    clearInterval(upTimer);
+	});
+  
   app.on('client::up',function(){
 
     if (!opts.hasSentAnnouncement) {
@@ -35,7 +40,7 @@ this._devices = {};
 		self.createCameraByUrl(url,index);
     });
   }.bind(this));
-  
+  	
 };
 
 driver.prototype.config = function(rpc,cb) {
