@@ -15,7 +15,7 @@ With thanks for the open nature of the Ninja Blocks platform and community.
 Installation
 ================
 
-    cd /opt/ninja/drivers
+    cd /opt/ninja/drivers (or driver directory)
     git clone https://github.com/mlava/ninja-forecast
     cd ninja-forecast && npm install
     sudo service ninjablock restart
@@ -48,6 +48,8 @@ Enter the frequency with which you want to check the forecast. Note that the fre
 
 Select the units you want to receive data in. See http://developer.forecast.io/docs/v2 for an explanation of the options available.
 
+Select which datapoints from the forecast.io API you want to have as devices on your dashboard. The developer documents details the specifications for each data type available.
+
 
 Use
 ================
@@ -59,6 +61,9 @@ It isn't possible for me to create a widget for original NB dashboard that conta
 
 Changelog
 ================
+
+v0.3.0
+More devices, configurable choice of devices/datapoints to show.
 
 v0.2.1
 Update to ensure driver stops polling forecast.io API if cloud connection is lost.

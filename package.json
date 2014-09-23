@@ -1,6 +1,6 @@
 {
   "name": "ninja-forecast",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Forecast.io driver for Ninja Blocks",
   "main": "index.js",
   "scripts": {
