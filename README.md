@@ -62,6 +62,9 @@ It isn't possible for me to create a widget for original NB dashboard that conta
 Changelog
 ================
 
+v0.3.1
+More devices - 40 all up.
+
 v0.3.0
 More devices, configurable choice of devices/datapoints to show.
 
