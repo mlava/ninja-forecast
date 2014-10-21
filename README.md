@@ -62,6 +62,9 @@ It isn't possible for me to create a widget for original NB dashboard that conta
 Changelog
 ================
 
+v0.3.2
+Time conversions for time-based datapoints.
+
 v0.3.1
 More devices - 40 all up.
 
@@ -86,4 +89,3 @@ To-do
 
 1.	Update beta dashboard gist to automatically assign the correct units based on the units selected for download in config.
 2.	Allow more than one location in config.
-3. 	Update device ids to make more of the forecast.io datapoints available in the Ninja Blocks rules engine as sensors.
